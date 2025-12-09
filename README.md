@@ -2,44 +2,16 @@ markdown
 
 # 📚 Biblioteca Livros API
 
-API REST para gerenciamento de livros em uma biblioteca. Permite cadastrar, listar, buscar, atualizar e remover livros.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **Node.js**
-- **TypeScript**
-- **Express**
-- **TypeORM**
-- **SQLite**
-
----
-
 ## 🛠️ Instalação
 
 Clone o repositório:
 
-<pre> ```bash git clone https://github.com/pedrocaribe06/bibliotec-api.git 
-  cd bibliotec-api npm install npm run dev ``` </pre>
-  
-Instale as dependências:
-
-<pre> ```bash
-
+```bash
+git clone https://github.com/pedrocaribe06/bibliotec-api.git
+cd bibliotec-api
 npm install
-
-``` </pre>
-
-O projeto já está configurado para usar SQLite. O arquivo do banco será criado automaticamente.
-
-Inicie a aplicação:
-
-<pre> ```bash
-
 npm run dev
-
-``` </pre>
+O projeto já está configurado para usar SQLite. O arquivo do banco será criado automaticamente.
 
 Acesse em: http://localhost:3000
 
@@ -55,12 +27,13 @@ DELETE	/api/livros/:id	Remover livro
 Exemplo de JSON para cadastro
 json
 
-<pre> ```json { "titulo": "O Senhor dos Anéis",
-"autor": "J.R.R. Tolkien", 
-"isbn": "978-85-222-0086-2", 
-"anoPublicacao": 1954, 
-"disponivel": true } ``` </pre>
-
+{
+  "titulo": "O Senhor dos Anéis",
+  "autor": "J.R.R. Tolkien",
+  "isbn": "978-85-222-0086-2",
+  "anoPublicacao": 1954,
+  "disponivel": true
+}
 📝 Scripts
 npm run dev — Inicia o servidor em modo desenvolvimento com hot reload.
 npm run build — Compila o projeto para produção.
